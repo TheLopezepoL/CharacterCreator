@@ -5,6 +5,8 @@ import ADT.ImageFlyweight.FlyweightFactory;
 import ADT.ImageFlyweight.ImagenHashTable;
 import ADT.Weapons.aArma;
 
+import java.util.ArrayList;
+
 public abstract class aPersonaje {
     protected String nombre;
     protected double vida;
@@ -12,6 +14,7 @@ public abstract class aPersonaje {
     protected int campos;
     protected int nivelAparicion;
     protected int costo;
+    protected ArrayList<aArma> armas;
     protected ImagenHashTable imagenes;
 
     public aPersonaje(String nombre, double vida, int nivel, int campos, int nivelAparicion, int costo, ImagenHashTable imagenes) {
