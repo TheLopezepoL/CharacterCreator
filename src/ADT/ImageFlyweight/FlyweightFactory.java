@@ -10,7 +10,7 @@ public class FlyweightFactory {
     }
 
     public static ImagenHashTable getFlyweight(ImagenHashTable imagenHashTable){
-        if (!cache.contains(imagenHashTable))
+        if (!cache.contains(imagenHashTable))   // for por id
             cache.add(imagenHashTable);
         return cache.get(cache.indexOf(imagenHashTable));
     }

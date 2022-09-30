@@ -16,12 +16,12 @@ public class BuilderPersonajeVolador implements iBuilderPersonaje{
 
     @Override
     public void reset() {
-
+        this.personajeVolador = new PersonajeVolador();
     }
 
     @Override
     public void agregarNombre(String nombre) {
-
+        //this.personajeVolador.setNombre(nombre);
     }
 
     @Override
