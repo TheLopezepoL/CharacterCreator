@@ -6,9 +6,12 @@ import java.awt.*;
 import java.util.*;
 
 public class ImagenHashTable {
+    protected static int FINAL_ID = 0;
+    private int id;
     private Hashtable<Integer, Hashtable<State, Image>> imagenes;  // Lvl - Estado - Imagen
 
     public ImagenHashTable(){
+        this.id = ++FINAL_ID;
         this.imagenes = new Hashtable<>();
     }
 
