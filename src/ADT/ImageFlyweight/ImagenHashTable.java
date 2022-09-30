@@ -24,7 +24,7 @@ public class ImagenHashTable {
         }
     }
 
-    public void agregarRutaImagen(int lvl, State state, Image image) {
+    public void agregarImagen(int lvl, State state, Image image) {
         imagenes.get(lvl).put(state, image);
     }
 }
