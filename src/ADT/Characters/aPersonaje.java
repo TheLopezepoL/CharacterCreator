@@ -25,6 +25,7 @@ public abstract class aPersonaje {
         this.nivelAparicion = nivelAparicion;
         this.costo = costo;
         this.imagenes = FlyweightFactory.getFlyweight(imagenes);
+        this.armas = new ArrayList<>();
     }
 
     public aPersonaje() {
@@ -33,7 +34,73 @@ public abstract class aPersonaje {
     public abstract aPersonaje clone();
     public abstract int atacar();
     public abstract void seleccionarArma(aArma arma);
-    public abstract boolean mover(Direction direction);
+    public abstract ArrayList<Integer> mover(Direction direction, int actualX, int actualY);
 
+    public String getNombre() {
+        return nombre;
+    }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public double getVida() {
+        return vida;
+    }
+
+    public void setVida(double vida) {
+        this.vida = vida;
+    }
+
+    public int getNivel() {
+        return nivel;
+    }
+
+    public void setNivel(int nivel) {
+        this.nivel = nivel;
+    }
+
+    public int getCampos() {
+        return campos;
+    }
+
+    public void setCampos(int campos) {
+        this.campos = campos;
+    }
+
+    public int getNivelAparicion() {
+        return nivelAparicion;
+    }
+
+    public void setNivelAparicion(int nivelAparicion) {
+        this.nivelAparicion = nivelAparicion;
+    }
+
+    public int getCosto() {
+        return costo;
+    }
+
+    public void setCosto(int costo) {
+        this.costo = costo;
+    }
+
+    public ArrayList<aArma> getArmas() {
+        return armas;
+    }
+
+    public void setNewArma(aArma arma) {
+        this.armas.add(arma);
+    }
+
+    public void resetArmas(){
+        this.armas = new ArrayList<>();
+    }
+
+    public ImagenHashTable getImagenes() {
+        return imagenes;
+    }
+
+    public void setImagenes(ImagenHashTable imagenes) {
+        this.imagenes = FlyweightFactory.getFlyweight(imagenes);
+    }
 }
