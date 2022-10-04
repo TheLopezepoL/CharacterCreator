@@ -1,8 +1,10 @@
 package ADT.Characters;
 
-import ADT.Direction;
 import ADT.ImageFlyweight.ImagenHashTable;
+import ADT.Mapa.Mapa;
 import ADT.Weapons.aArma;
+
+import java.util.ArrayList;
 
 public class PersonajeTerrestre extends aPersonaje{
     public PersonajeTerrestre(String nombre, double vida, int nivel, int campos, int nivelAparicion, int costo, ImagenHashTable imagenes) {
@@ -23,18 +25,25 @@ public class PersonajeTerrestre extends aPersonaje{
 
     @Override
     public int atacar() {
-        // Ataca con todas las armas activas, si no tienes armas debe de darsele un arma default
-        return 0;
+        int danhoTotal = 0;
+        for (aArma arma : this.armas)
+            danhoTotal += arma.utilizar();
+        return danhoTotal;
     }
 
     @Override
     public void seleccionarArma(aArma arma) {
         // Pone Activa un arma (Pensar cuando desactivar armas)
+        for (aArma armaActual : this.armas){
+            armaActual.setActivo(armaActual == arma);
+        }
     }
 
     @Override
-    public boolean mover(Direction direction) {
-        // Mover 1 casilla en la direccion dada, devuelve true si se pudo mover
+    public boolean canMove(ArrayList<Integer> newPosition, Mapa mapa) {
+        if (newPosition.size() == 2)
+            return mapa.verObstaculo(newPosition.get(0), newPosition.get(1)) == 0;
         return false;
     }
+
 }
