@@ -1,7 +1,7 @@
 package ADT.Characters;
 
-import ADT.Direction;
 import ADT.ImageFlyweight.ImagenHashTable;
+import ADT.Mapa.Mapa;
 import ADT.Weapons.aArma;
 
 import java.util.ArrayList;
@@ -40,37 +40,10 @@ public class PersonajeTerrestre extends aPersonaje{
     }
 
     @Override
-    public ArrayList<Integer> mover(Direction direction, int x, int y) {
-        // Mover 1 casilla en la direccion dada, devuelve true si se pudo mover
-        // Para saber si puede atravesar terreno deberiamos de pasarle el campo de juego... no se si sea buen diseño
-        // Ahora devuelve las coordenadas en las que se deberia ubicar
-        // Podemos hacer 2 funciones, esta que devuelve la coordenadas y otra que de True si puede estar en esa coordenada (ya se que son coordenadas imposibles o que haya obstaculos)
-        ArrayList<Integer> result = new ArrayList<>();
-        switch (direction){
-            case UP -> x--;
-            case UP_RIGHT -> {
-                x--;
-                y++;
-            }
-            case RIGHT -> y++;
-            case DOWN_RIGHT -> {
-                x++;
-                y++;
-            }
-            case DOWN -> x++;
-            case DOWN_LEFT -> {
-                x++;
-                y--;
-            }
-            case LEFT -> y--;
-            case UP_LEFT -> {
-                x--;
-                y--;
-            }
-            case DEFAULT -> {}
-        }
-        result.add(x);
-        result.add(y);
-        return result;
+    public boolean canMove(ArrayList<Integer> newPosition, Mapa mapa) {
+        if (newPosition.size() == 2)
+            return mapa.verObstaculo(newPosition.get(0), newPosition.get(1)) == 0;
+        return false;
     }
+
 }

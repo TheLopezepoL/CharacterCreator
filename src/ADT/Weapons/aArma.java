@@ -74,6 +74,10 @@ public abstract class aArma {
         this.nivel = nivel;
     }
 
+    public void subirNivel() {
+        this.nivel++;
+    }
+
     public boolean isActivo() {
         return activo;
     }
