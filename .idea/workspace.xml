@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d12c8bd-1f98-4e43-8b1b-4a2a60041bfb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ADT/Mapa/Mapa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ADT/Characters/Builders/BuilderPersonajeTerrestre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ADT/Characters/Builders/BuilderPersonajeTerrestre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ADT/Characters/Builders/BuilderPersonajeVolador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ADT/Characters/Builders/BuilderPersonajeVolador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ADT/Characters/Builders/iBuilderPersonaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ADT/Characters/Builders/iBuilderPersonaje.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ADT/Characters/PersonajeTerrestre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ADT/Characters/PersonajeTerrestre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ADT/Characters/PersonajeVolador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ADT/Characters/PersonajeVolador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ADT/Characters/aPersonaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ADT/Characters/aPersonaje.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ADT/Weapons/aArma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ADT/Weapons/aArma.java" afterDir="false" />
-    </list>
+    <list default="true" id="5d12c8bd-1f98-4e43-8b1b-4a2a60041bfb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +62,7 @@
       <workItem from="1664162960686" duration="14818000" />
       <workItem from="1664509966079" duration="2122000" />
       <workItem from="1664840524361" duration="5771000" />
-      <workItem from="1664910945642" duration="6787000" />
+      <workItem from="1664910945642" duration="7220000" />
     </task>
     <servers />
   </component>
