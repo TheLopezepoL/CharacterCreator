@@ -24,7 +24,7 @@ public class ArmaDeFuego extends aArma{
     }
 
     public void recargar(){
-        // Agarra la municion y se la pasa al cargador
+        if (municion > 0){ cargador = cargador + municion; };
     }
 
     @Override
@@ -33,8 +33,8 @@ public class ArmaDeFuego extends aArma{
     }
 
     @Override
-    public int utilizar() {
-        // if municion disparar y retorna el danho del arma
-        return 0;
+    public double utilizar() {
+        if (cargador > 0){ cargador--; return danho; }
+        else return 0;
     }
 }

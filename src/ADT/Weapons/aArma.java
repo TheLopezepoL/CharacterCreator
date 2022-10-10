@@ -28,7 +28,7 @@ public abstract class aArma {
     }
 
     public abstract aArma clone();
-    public abstract int utilizar();
+    public abstract double utilizar();
 
     public String getNombre() {
         return nombre;
