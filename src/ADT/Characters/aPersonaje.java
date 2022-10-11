@@ -37,9 +37,9 @@ public abstract class aPersonaje {
     }
 
     public abstract aPersonaje clone();
-    public abstract int atacar();
+    public abstract int atacar(Direction direction);   // Ver como hacer que el arma ataque segun la posicion del personaje
     public abstract void seleccionarArma(aArma arma);
-    public abstract boolean canMove(ArrayList<Integer> newPosition, Mapa mapa);
+    public abstract boolean canMove(ArrayList<Integer> newPositionp, int obstaculo); // Puede recibir el obstaculo y no el mapa (trabajo del controlador)
     public ArrayList<Integer> mover(Direction direction) {
         // Mover 1 casilla en la direccion dada, devuelve true si se pudo mover (Puede volar, no pega con muros segun la altura del vuelo)
         // Para saber si puede atravesar terreno deberiamos de pasarle el campo de juego... no se si sea buen diseño
