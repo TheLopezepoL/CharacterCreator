@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="5d12c8bd-1f98-4e43-8b1b-4a2a60041bfb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ADT/Characters/aPersonaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ADT/Characters/aPersonaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ADT/Weapons/ArmaBlanca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ADT/Weapons/ArmaBlanca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ADT/Weapons/ArmaDeFuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ADT/Weapons/ArmaDeFuego.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ADT/Weapons/Builders/BuilderArmaBlanca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ADT/Weapons/Builders/BuilderArmaBlanca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ADT/Weapons/Builders/BuilderArmaDeFuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ADT/Weapons/Builders/BuilderArmaDeFuego.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ADT/Weapons/Builders/BuilderMagia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ADT/Weapons/Builders/BuilderMagia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ADT/Weapons/Magia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ADT/Weapons/Magia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ADT/Weapons/aArma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ADT/Weapons/aArma.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +42,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/andre/Documents/GitHub/CharacterCreator&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
@@ -65,9 +72,9 @@
       <workItem from="1664162960686" duration="14818000" />
       <workItem from="1664509966079" duration="2122000" />
       <workItem from="1664840524361" duration="5771000" />
-      <workItem from="1664910945642" duration="7220000" />
-      <workItem from="1664928797842" duration="3502000" />
-      <workItem from="1665089297689" duration="1414000" />
+      <workItem from="1664910945642" duration="6787000" />
+      <workItem from="1665078210039" duration="5817000" />
+      <workItem from="1665434068910" duration="1603000" />
     </task>
     <servers />
   </component>

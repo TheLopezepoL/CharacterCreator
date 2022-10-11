@@ -20,37 +20,23 @@ public class BuilderArmaDeFuego implements iBuilderArma{
     }
 
     @Override
-    public void agregarNombre(String nombre) {
-
-    }
+    public void agregarNombre(String nombre) { this.armaDeFuego.setNombre(nombre); }
 
     @Override
-    public void agregarAlcance(double alcance) {
-
-    }
+    public void agregarAlcance(double alcance) { this.armaDeFuego.setAlcance(alcance); }
 
     @Override
-    public void agregarDanho(double danho) {
-
-    }
+    public void agregarDanho(double danho) { this.armaDeFuego.setDanho(danho); }
 
     @Override
-    public void agregarRadioExplosion(double radioExplosion) {
-
-    }
+    public void agregarRadioExplosion(double radioExplosion) { this.armaDeFuego.setRadioExplosion(radioExplosion); }
 
     @Override
-    public void agregarVelocidadDeAtaque(double velocidadDeAtaque) {
-
-    }
+    public void agregarVelocidadDeAtaque(double velocidadDeAtaque) { this.armaDeFuego.setVelocidadDeAtaque(velocidadDeAtaque); }
 
     @Override
-    public void agregarNivel(int nivel) {
-
-    }
+    public void agregarNivel(int nivel) { this.armaDeFuego.setNivel(nivel); }
 
     @Override
-    public void agregarImagenes(ImagenHashTable imagenes) {
-        // Flyweight
-    }
+    public void agregarImagenes(ImagenHashTable imagenes) { this.armaDeFuego.setImagenes(imagenes); }
 }
