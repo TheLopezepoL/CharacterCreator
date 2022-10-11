@@ -8,17 +8,19 @@ public class ArmaBlanca extends aArma{
         super(nombre, alcance, danho, radioExplosion, velocidadDeAtaque, nivel, imagenes);
     }
 
+    public ArmaBlanca(ArmaBlanca armaBlanca){
+        super(armaBlanca.nombre, armaBlanca.alcance, armaBlanca.danho, armaBlanca.radioExplosion, armaBlanca.velocidadDeAtaque, armaBlanca.nivel, armaBlanca.imagenes);
+    }
     public ArmaBlanca() {
     }
 
     @Override
     public aArma clone() {
-        return null;
+        return new ArmaBlanca(this);
     }
 
     @Override
-    public int utilizar() {
-        //Solo hacer danho
-        return 0;
+    public double utilizar() {
+        return danho;
     }
 }

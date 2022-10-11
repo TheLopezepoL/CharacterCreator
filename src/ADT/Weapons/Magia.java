@@ -27,8 +27,8 @@ public class Magia extends aArma{
     }
 
     @Override
-    public int utilizar() {
-        // if mana >= costoMana lanzarHechizo()
-        return 0;
+    public double utilizar() {
+        if (mana > costoMana){ mana -= costoMana; return danho; }
+        else  return 0;
     }
 }
